@@ -15,7 +15,7 @@ Future<void> generate(List<String> args) async {
   /// Assign variable values
   stateName = args.first;
 
-  statePath = "lib/screen/${Utils.snake(moduleName)}/presentation";
+  statePath = "lib/features/${Utils.snake(moduleName)}/presentation";
 
   /// Generate state
   await generateState();
@@ -68,7 +68,7 @@ bool _validateArgs(List<String> args) {
   }
 
   /// Assign module path
-  modulePath = "lib/screen/${Utils.snake(moduleName)}";
+  modulePath = "lib/features/${Utils.snake(moduleName)}";
 
   /// Check if the module exists or not
   if (!Utils.isExists(modulePath)) {

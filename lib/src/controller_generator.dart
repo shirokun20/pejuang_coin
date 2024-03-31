@@ -15,7 +15,7 @@ Future<void> generate(List<String> args) async {
   /// Assign variable values
   controllerName = args.first;
 
-  controllerPath = "lib/screen/${Utils.snake(moduleName)}/presentation";
+  controllerPath = "lib/features/${Utils.snake(moduleName)}/presentation";
 
   /// Generate Controller
   await generateController();
@@ -70,7 +70,7 @@ bool _validateArgs(List<String> args) {
   }
 
   /// Assign module path
-  modulePath = "lib/screen/${Utils.snake(moduleName)}";
+  modulePath = "lib/features/${Utils.snake(moduleName)}";
 
   /// Check if the module exists or not
   if (!Utils.isExists(modulePath)) {

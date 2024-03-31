@@ -15,7 +15,7 @@ Future<void> generate(List<String> args) async {
   /// Assign variable values
   datasourceName = args.first;
 
-  datasourcePath = "lib/screen/${Utils.snake(moduleName)}/repository";
+  datasourcePath = "lib/features/${Utils.snake(moduleName)}/repository";
 
   /// Generate datasource
   await generateDs();
@@ -70,7 +70,7 @@ bool _validateArgs(List<String> args) {
   }
 
   /// Assign module path
-  modulePath = "lib/screen/${Utils.snake(moduleName)}";
+  modulePath = "lib/features/${Utils.snake(moduleName)}";
 
   /// Check if the module exists or not
   if (!Utils.isExists(modulePath)) {

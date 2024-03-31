@@ -30,13 +30,13 @@ String drPath = "";
 Future<void> generate(List<String> args) async {
   /// Assign variable values
   moduleName = args.first;
-  modulePath = "lib/screen/${Utils.snake(moduleName)}";
-  controllerPath = "lib/screen/${Utils.snake(moduleName)}/presentation";
-  viewPath = "lib/screen/${Utils.snake(moduleName)}/presentation";
-  statePath = "lib/screen/${Utils.snake(moduleName)}/presentation";
-  routePath = "lib/screen/${Utils.snake(moduleName)}/router";
-  bindingPath = "lib/screen/${Utils.snake(moduleName)}/binding";
-  drPath = "lib/screen/${Utils.snake(moduleName)}/repository";
+  modulePath = "lib/features/${Utils.snake(moduleName)}";
+  controllerPath = "lib/features/${Utils.snake(moduleName)}/presentation";
+  viewPath = "lib/features/${Utils.snake(moduleName)}/presentation";
+  statePath = "lib/features/${Utils.snake(moduleName)}/presentation";
+  routePath = "lib/features/${Utils.snake(moduleName)}/router";
+  bindingPath = "lib/features/${Utils.snake(moduleName)}/binding";
+  drPath = "lib/features/${Utils.snake(moduleName)}/repository";
   routerMainPath = "lib/components/config/app_routes.dart";
   routerMainImport = "import 'package:modular_asix/screen/";
 
